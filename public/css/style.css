@@ -108,7 +108,6 @@ body{
 .main_header_right figure img{
     filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.3));
 }
-
 .temp_form{
     width: 60%;
     position: relative;
@@ -148,40 +147,50 @@ body{
 
 }
 .tempInformation{
-    width: 40rem;
+    width: 45rem;
     margin: auto;
     min-height: 20rem;
     background-color: #323544;
     border-radius: 1rem;
-    padding: 1rem;
     font-family: "Roboto", sans-serif;
 }
 
 .top_layer{
     width: 100%;
-    margin: 20%;
-    background-color: #323544;
+    height: 80%;
+    margin: auto;
+    background-color: #262833fa;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: #07070752 solid;
     border-radius: 1rem;
 }
 .top_layer p{
     color: #fff;
     font-weight: 300;
-    padding: 2rem;
-    font-size: 1.3rem;
+    padding: 1.3rem;
+    font-size: 1.4rem;
+}
+#day{
+    padding-top: 2rem;
+}
+#today_data{
+    padding-top: 2rem;
 }
 .main_layer{
     width: 100%;
     height: 80%;
+    margin: auto;
     display: flex;
     flex-direction: column;
+    border: #07070752 solid;
+    border-radius: 1rem;
+    background-color: #323544;
     padding: 2rem;
 }
 .main_layer #city_name {
-    padding: 2rem 0;
-    color: #bfc1c8;
+    color: #a6a6b8;
     font-weight: 300;
     font-size: 2rem;
 }
@@ -196,9 +205,9 @@ body{
     font-weight: 900;
 }
 .fa{
-    color: #009ad8;
+    color: #4da9ce;
 }
-.sup{
+sup{
     font-size: 6rem;
     margin-top: -2rem;
 }
@@ -206,6 +215,12 @@ body{
     visibility: hidden;
     transition: all 0.3s linear;
 }
+
+.eroor img{
+    width: 60rem;
+    height: 30rem;
+}
+
 footer{
    width: 100%;
    background-color: var(--main-bg);
@@ -228,10 +243,16 @@ footer p{
         height: auto;
         margin-top: 3rem;
     }
+    .temp_form{
+        width: auto;
+    }
+    .tempInformation{
+        width: auto;
+    }
+    .main_layer .middle_layer p,
+    .main_layer .middle_layer .fa{
+       font-size: 5rem;
+    }
 }
 
 /* 404 error page style  */
-.eroor img{
-    width: 60rem;
-    height: 30rem;
-}
