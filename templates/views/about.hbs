@@ -14,8 +14,8 @@
                 <div class="row">
                     <!-- Left Side -->
                     <div class="col-md-6 col-12 main_header_right align-items-center">
-                        <figure>
-                            <img src="images/9.png" alt="anubhav-image" class = "img-fluid" title="anubhav-img">
+                        <figure class="ai">
+                            <a href="https://app.daily.dev/Anubhav_202"><img src="https://api.daily.dev/devcards/3fd8a8cfaf3847f08ac13551d7281338.png?r=w47" width="400" alt="Anubhav's Dev Card" width="400" alt="anubhav-image" class = "img-fluid" title="anubhav-img"></a>
                         </figure>
                     </div>    
                    <div class = "col-md-6 col-12 main_header_left">
@@ -29,7 +29,13 @@
             </div>
         </div>
     </div>   
-    
+    <script src="images/vanilla-tilt.min.js"></script>
+    <script>
+       VanillaTilt.init(document.querySelector(".ai"), {
+		 max: 25,
+		 speed: 400
+	   });
+    </script>
     {{>footer}}
 </body>
 
